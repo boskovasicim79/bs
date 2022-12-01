@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/92df5252fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>BS RS </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="index.html" onclick="toggleMenu();">ПОЧЕТНА</a></li>
+            <li><a href="o_nama.html" onclick="toggleMenu();">О НАМА</a></li>
+            <li><a href="vijesti.html" onclick="toggleMenu();">ВИЈЕСТИ</a></li>
+            <li><a href="kontakt.html" onclick="toggleMenu();">КОНТАКТ</a></li>
+            <li> <a href="#"><img src="logo.png" class="logo2"></a></li>
+        </ul>
+    </header>
+
+
+    <div class="blog-container">
+        <div class="naslov">
+            <h2>
+                Naslov Bloga
+                Pet medalja za Srbiju na Svjetskom prvenstvu u Holandiji
+            </h2>
+        </div>
+
+        <img src="slika-kontakt.jpg">
+
+
+        <p>Na poslednjem održanom Svetskom prvenstvu u Kairu, Zorana Arunović
+            je osvojila bronzanu medalju, ali je i prva od predstavnika Srbije
+            osvojila kvotu za učešće na Olimpijskim igrama koje će se održati u
+            Parizu 2024. Osim što je to bila njena 51. medalja osvojena u
+            olimpijskim disciplinama, sa upucanih 590 krugova je oborila
+            svetski rekord, ali je ubrzo Kineskinja prestigla osvojivši zlatno
+            odličje koja je bila bolja za jedan krug od Arunovićeve.
+            Da prva upucaš kvotu, deluje kao da je lako i da ti „ide od ruke“
+            Koliko je u stvari izazova tu i kakav je u stvari taj „put do
+            kvote“?
+
+            Meni je drago da sve to drugima deluje kao da je lagano i da sve
+            ide od ruke, međutim realnost je apsolutno drugačija. Ono što
+            svi imaju prilike da vide je samo jedan završni produkt, i samo
+            pet posto svega onoga što mora da se odradi pre toga u trenažnom
+            procesu. Slagala bih kada bih rekla da je sve lagano, da sve
+            ide od ruke, da nema problema. Ima problema, ima puno prepreka,
+            padova, ima loših trenutaka ali ima i jako dobrih trenutaka,
+            ali kada se sve sklopi zajedno, ovako neke stvari imaju
+            mnogo veću vrednost.
+        </p>
+    </div>
+
+
+
+    <footer>
+        <div class="contactInfoBx">
+            <div class="log">
+                <a href="#"><img src="logo.png" class="logo1" alt="BRSR_Logo"></a>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text">
+                    <h3>АДРЕСА:</h3>
+                    <p>МИЛОША ОБИЛИЋА 2<br>76300 БИЈЕЉИНА</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="text">
+                    <h3>КОНТАКТ:</h3>
+                    <p>ЕЛЕКТРОНСКА ПОШТА<br><a href="#">savez@bokssrpske.com</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--FUTER ZA MOBLINU VERZIJU-->
+        <div class="footer-mobilni">
+            <div class="isparavka-skew">
+                <h2>KONTAKT</h2>
+                <div class="footer-box">
+                    <i class="fa fa-phone"></i>
+                    <a href="#">savez@bokssrpske.com</a>
+                </div>
+                <div class="footer-box">
+                    <i class="fa fa-map-marker"></i>
+                    <p>Miloša Obilića 2 Bijeljina</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sekcija43">
+        <div class="drustvene">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </div>
+    <div id="btnScrollToTop">
+        <span class="material-symbols-outlined">
+            expand_less
+        </span>
+        <i class="material-icons rukavica">sports_mma</i>
+    </div>
+
+      <div class="copyright">
+        <p>Copyright @ 2020 <span>BS Republike Srpske</span>. All Right Reserved.</p>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 6500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+</body>
+
+</html>
