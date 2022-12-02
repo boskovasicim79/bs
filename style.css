@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: white;
+}
+
+header.sticky {
+    padding: 5px 100px 0 100px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #000;
+}
+
+/*header ul li:first-child,*/
+header ul li:last-child,
+header ul li:first-child {
+    border-left: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: -120px;
+}
+
+header.sticky .logo {
+    max-width: 80px;
+    margin-bottom: 0px;
+}
+
+header .logo2 {
+    display: none;
+}
+
+
+/*BANNER 2*/
+
+.banner2 img {
+    width: 100%;
+}
+
+
+
+/*SLIDER NA HOME*/
+
+/*Podnaslov slajdera i pepsija*/
+.naslov2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #34394b;
+}
+
+.naslov2 h3 {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.container2 {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: auto;
+    height: fit-content;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+.muhamed {
+    background: #c62127;
+}
+
+.tajson {
+    background: #c61f1e;
+    color: #fff;
+}
+
+.sugar {
+    background: #9b1d21;
+}
+
+.swiper-slide .potpis {
+    position: absolute;
+    top: 65%;
+    right: 35%;
+}
+
+.swiper-slide p {
+    padding-left: 100px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-slide img {
+    width: auto;
+    height: 500px;
+}
+*/
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    top: 23%;
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+/*BLOG NA HOME*/
+.naslov a {
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.sekcija-blog {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #fff;
+    /*padding-bottom: 60px;*/
+}
+
+.blog-post a img {
+    width: 600px;
+    height: 373px;
+    object-fit: cover;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);
+}
+
+.blog-post a img:hover {
+    opacity: 0.7;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.kontent {
+    padding: 30px;
+    max-width: 600px;
+    margin-top: -10px;
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 15%);
+    margin-right: 0;
+}
+
+.blog-post a {
+    text-decoration: none;
+}
+
+.kontent h4 {
+    padding-top: 20px;
+    /*padding-right: 150px;*/
+    font-size: 20px;
+    line-height: 1.45;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.kontent p {
+    font-size: 17px;
+    color: #353535;
+    padding-bottom: 20px;
+}
+
+.pojavljivanjemob {
+    display: none;
+}
+
+@media (max-width: 750px) {
+
+    .blog-post {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blog-post a img {
+        width: 100%;
+        height: 273px;
+        object-fit: cover;
+    }
+}
+
+/*DUGME ZA ISPOD BLOGA  (sve vijesti)*/
+.button {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.button button {
+    border: none;
+    border-radius: 5px;
+    background: #e21c1c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*PEPSI*/
+
+.sekcija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin-bottom: 100px;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    /*background: #ccc;*/
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before {
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+
+.card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 290px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 72%;
+    height: 400px;
+}
+
+.card .content2 {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content2 {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content2 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card .content2 p {
+    color: #fff;
+}
+
+/*PEPSI RESPONSIVE*/
+@media (min-width: 992px) {
+    .pepsi-naslov {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .card {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .card:hover {
+        height: 600px;
+    }
+
+    .card .content2 {
+        width: 100%;
+        left: 0;
+        padding: 50px 40px;
+    }
+
+    .card:hover img {
+        top: 65%;
+        left: 50%;
+        height: 350px;
+    }
+
+    .card .content2 p {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:257px) {
+
+    .card .content2 {
+        padding: 20px;
+    }
+}
+
+
+/*O NAMA STRANICA*/
+
+section {
+    margin-top: 100px;
+}
+
+.naslov {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.naslov h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.sadrzaj h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    /*color: #111;*/
+}
+
+.sadrzaj p {
+    width: 100%;
+    text-align: center;
+    padding: 0 260px;
+}
+
+.kolona2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolona2 img {
+    max-height: 500px;
+    margin-bottom: 30px;
+}
+
+.two-column {
+    flex: 0 0 49%;
+    -webkit-flex: 0 0 49%;
+    -moz-flex: 0 0 49%;
+    -ms-flex: 0 0 49%;
+}
+
+.siva {
+    background: #fff;
+    padding-top: 10px;
+}
+
+.sadrzaj2 h3,
+.sadrzaj2 h4 {
+    width: 100%;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.sadrzaj2 h4 {
+    margin-bottom: 10px;
+}
+
+.sadrzaj2 p {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.margin-top {
+    margin-top: 30px;
+
+}
+
+.mirkotel {
+    display: none;
+}
+
+
+/*KONTAKT INFO*/
+
+.kontakt {
+    margin-top: 100px;
+}
+
+.kontaktinfo {
+    /*padding-left: 350px;*/
+    text-align: center;
+}
+
+.kontaktinfo h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.kontakt-slika {
+    text-align: center;
+}
+
+.kontakt .box {
+    font-size: 20px;
+}
+
+.kontakt .fa {
+    padding-right: 10px;
+}
+
+/*KONTAKT INFO SEKCIJA ZELIS DA BUDES*/
+
+.services {
+    background: #fff
+}
+
+.heading.white {
+    color: #111;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    padding: 40px 20px;
+    background: #fff;
+    color: #111;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/*.services .content .servicesBx:hover {
+    background: #d5d5d5;
+}*/
+
+.services .content .servicesBx img {
+    max-width: 80px;
+    /*filter: invert(1);*/
+}
+
+.services .content .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+
+/*  VIJESTI STRANICA*/
+.sekcija-blog-vijesti {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/*BLOG STRANICA CLANAK */
+
+
+.blog-container {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-container img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.blog-container p {
+    text-align: left;
+    padding: 20px 200px;
+    font-size: 18px;
+}
+
+@media (max-width: 1770px) {
+
+    .blog-container {
+        padding-top: 40px;
+    }
+
+    .blog-container p {
+        text-align: left;
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 990px) {
+    .blog-container {
+        margin-top: 50px;
+        padding-top: 0;
+    }
+}
+
+
+/*SRKOLL RUKAVICA STRELICA */
+
+#btnScrollToTop {
+
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #e21c1c;
+    box-shadow: 0 0 10px rgba(0, 0, 0 0.25);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop .material-icons {
+    width: 50px;
+    display: block;
+    padding-left: 21px;
+}
+
+#btnScrollToTop .material-symbols-outlined {
+    padding-left: 21px;
+    padding-top: 6px;
+}
+
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(0deg, #761010 10%, #e21c1c 100%);
+    /*background:#e30017;*/
+}
+
+.contactInfoBx {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    padding: 15px;
+}
+
+.logo1 {
+    max-width: 150px;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+
+}
+
+.contactInfoBx .box .text p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-mobilni {
+    display: none;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.footer-mobilni .footer-box {
+    margin-bottom: 15px;
+}
+
+.footer-mobilni a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-mobilni p {
+    font-size: 22px;
+    display: inline;
+}
+
+.footer-mobilni h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.footer-mobilni .footer-box i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.drustvene {
+    padding-top: 70px;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.drustvene i {
+    padding-right: 20px;
+    color: white;
+}
+
+.copyright {
+    background: white;
+    color: red;
+    text-align: center;
+    padding: 2px;
+}
+
+.copyright span {
+    text-transform: uppercase
+}
+
+.sekcija43 {
+    display: none;
+}
+
+.pomocna {
+    width: 220px;
+}
+
+
+
+/*Responsive*/
+
+@media (max-width: 1370px) {
+    .pomocna {
+        width: 250px;
+    }
+
+    .pomocna img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .banner2 {
+        padding-top: 75px;
+    }
+
+    header {
+        padding: 10px 100px;
+    }
+
+    header.sticky {
+        padding: 10px 100px;
+    }
+
+    header.sticky .logo {
+        max-width: 50px;
+    }
+
+    header .logo {
+        margin-bottom: 0px;
+        max-width: 50px;
+    }
+
+    header .logo2 {
+        display: block;
+        max-width: 150px;
+        margin-top: 50px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 74px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li {
+        border-left: none;
+    }
+
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    header ul li a {
+        color: #0006;
+    }
+
+    header ul li:hover a {
+        color: #000;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .toggle.active {
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+        z-index: 1000;
+        filter: invert(1);
+    }
+
+    .sadrzaj2 {
+        text-align: center;
+    }
+
+    .kontaktinfo h2 {
+        margin-bottom: 50px;
+    }
+
+    .kontakt-slika {
+        display: none;
+    }
+
+    .kontakt .kolona2 .kontaktinfo .box {
+        margin-bottom: 60px;
+    }
+
+    .container2 {
+        display: none;
+    }
+
+    .sadrzaj p {
+        padding: 0 60px;
+    }
+
+    .banner .textBox {
+        padding: 0px;
+    }
+
+    .banner .textBox h2 {
+        font-size: 3em;
+    }
+
+    .banner .textBox h3 {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 850px) {
+    /*HEADER*/
+
+    header {
+        padding: 10px 30px;
+    }
+
+    header.sticky {
+        padding: 10px 30px;
+    }
+
+    /*FOOTER*/
+    footer {
+        transform: skew(0deg, 10deg);
+    }
+
+    .isparavka-skew {
+        transform: skewY(-10deg)
+    }
+
+    .footer-mobilni {
+        display: block;
+    }
+
+    .sekcija43 {
+        display: block;
+        margin-top: -70px;
+        height: 140px;
+        background: #761010;
+    }
+
+    .contactInfoBx {
+        display: none;
+    }
+
+    /*.contactInfoBx {
+        flex-direction: column;
+         align-items: center;
+         text-align: center;
+    }
+
+    .contactInfoBx .box .text {
+        margin-left: -35px;
+    }
+
+    .contactInfoBx .logo1 {
+        margin-bottom: 50px;
+    }
+    */
+
+    .container1 {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .pomocna {
+        width: auto;
+    }
+
+    .kolona2 {
+        flex-direction: column;
+    }
+
+    .mirkocomp {
+        display: none;
+    }
+
+    .mirkotel {
+        display: block;
+    }
+}
+
+@media (max-width: 630px) {
+    .pojavljivanjemob {
+        display: block;
+    }
+
+    .swiper .swiper-button-prev {
+        left: 20px;
+        right: auto;
+    }
+
+    .swiper .swiper-button-next {
+        right: 20px;
+        left: auto;
+    }
+
+    .pojavljivanjecomp {
+        display: none;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .banner2 {
+        padding-top: 75px;
+    }
+
+    header.sticky {
+        background-color: #fff;
+        padding: 10px 30px;
+        border-bottom: solid 1px #d5d5d5;
+    }
+
+    .menu {
+        top: 0;
+    }
+
+    .toggle {
+        margin-top: 10px;
+        filter: invert(1);
+    }
+
+    .toggle.active {
+        margin-top: 10px;
+    }
+
+    header .logo2 {
+        margin-left: -20px;
+    }
+
+    header ul li a {
+        font-size: 18px;
+    }
+
+    .banner .textBox {
+        padding: 10px;
+    }
+
+    .banner .textBox h2 {
+        font-size: 2em;
+    }
+
+    .banner .textBox h3 {
+        font-size: 2em;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        top: 20%;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+}
